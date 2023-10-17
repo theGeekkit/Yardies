@@ -1,8 +1,8 @@
 from django.urls import path
-from .views import CreateSaleLocationView
+from . import views
 
-
+app_name = 'yardiesSales'
 
 urlpatterns = [
-    path('create/', CreateSaleLocationView.as_view, namespace='yardiesSales'),
+    path('sale/', views.SaleLocation.as_view(), namespace='Sales'),
 ]

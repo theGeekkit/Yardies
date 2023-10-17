@@ -20,5 +20,5 @@ import yardiesSales
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('yardiesSales/', include(yardiesSales.url, namespace='yardiesSales')),
+    path('yardiesSales/', include('yardiesSales.urls')),
 ]

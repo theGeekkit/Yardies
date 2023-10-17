@@ -8,7 +8,7 @@ from .forms import CreateSaleLocationForm
 class CreateSaleLocationView(CreateView):
     model = SaleLocation
     form = CreateSaleLocationForm
-    name = "createsalelocation.html"
-    success_url = reverse_lazy
+    name = 'createsalelocation.html'
+    success_url = reverse_lazy('')
     
     
